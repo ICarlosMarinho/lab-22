@@ -1,6 +1,9 @@
 type WithChildren<T = {}> = T & { children?: React.ReactNode | string };
 
-declare module "*.jpg" {
-  const content: any;
-  export default content;
+interface Product {
+  id: string;
+  name: string;
+  picture: string;
+  quantity: number;
+  price: number;
 }
