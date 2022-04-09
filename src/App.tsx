@@ -3,7 +3,7 @@ import { ThemeProvider } from "styled-components";
 import GlobalStyles from "./styles/global";
 import { theme } from "./styles/theme";
 
-import Home from "./pages/home";
+import Home from "./pages/Home";
 
 const App = () => {
   return (

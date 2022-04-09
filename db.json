@@ -1,11 +1,39 @@
 {
   "products": [
     {
-      "id": 1,
-      "name": "Product 1",
-      "picture": "https://somos.lojaiplace.com.br/wp-content/uploads/2021/04/apple_iphone-12-spring21_purple_04202021.jpg",
-      "quantity": 2,
-      "price": 299.50
+      "id": "d4bf8800-ae1f-42d4-8df1-7b6c162f744c",
+      "name": "Óculos de sol Shelter",
+      "picture": "https://fcc-assets.s3.sa-east-1.amazonaws.com/lab-22/glasses-01.jpg",
+      "quantity": 32,
+      "price": 299.5
+    },
+    {
+      "id": "d72dc693-6c22-4584-8f20-c36bbb5bc230",
+      "name": "Óculos de sol Tent",
+      "picture": "https://fcc-assets.s3.sa-east-1.amazonaws.com/lab-22/glasses-02.jpg",
+      "quantity": 50,
+      "price": 499.25
+    },
+    {
+      "id": "810772e3-fad4-4afc-adb8-a67750b3eb97",
+      "name": "Óculos de sol Grip",
+      "picture": "https://fcc-assets.s3.sa-east-1.amazonaws.com/lab-22/glasses-03.jpg",
+      "quantity": 75,
+      "price": 350.0
+    },
+    {
+      "id": "cbe2c72c-cc77-4da2-9ea8-18897cdbf01f",
+      "name": "Óculos de sol Fuzzy",
+      "picture": "https://fcc-assets.s3.sa-east-1.amazonaws.com/lab-22/glasses-04.jpg",
+      "quantity": 64,
+      "price": 299.9
+    },
+    {
+      "id": "8d384801-2799-4cc7-849b-fe2bd937deac",
+      "name": "Óculos de sol Whimsical",
+      "picture": "https://fcc-assets.s3.sa-east-1.amazonaws.com/lab-22/glasses-05.jpg",
+      "quantity": 45,
+      "price": 250.99
     }
   ]
 }

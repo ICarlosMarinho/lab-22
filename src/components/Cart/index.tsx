@@ -4,7 +4,7 @@ import { CloseOutline } from "@styled-icons/evaicons-outline";
 import Button from "../Button";
 import Typography from "../Typography";
 
-import { Wrapper, Subtotal, Header } from "./styles";
+import { Wrapper, Subtotal, Header } from "./Cart.styles";
 
 export type MenuPaymentProps = {
   isOpen: boolean;
