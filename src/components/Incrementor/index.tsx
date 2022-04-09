@@ -1,7 +1,7 @@
 import { Plus as PlusIcon } from "@styled-icons/boxicons-regular/Plus";
 import { Subtract as SubtractIcon } from "@styled-icons/remix-fill/Subtract";
 
-import { Wrapper, IconWrapper, Quantity } from "./styles";
+import { Wrapper, IconWrapper, Quantity } from "./Incrementor.styles";
 
 type IncrementorProps = {
   id: number;

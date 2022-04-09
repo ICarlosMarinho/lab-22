@@ -1,6 +1,4 @@
-import { WithChildren } from "../../common/childrenType";
-
-import { Wrapper } from "./styles";
+import { Wrapper } from "./Button.styles";
 
 export type ButtonProps = {
   fullWidth?: boolean;

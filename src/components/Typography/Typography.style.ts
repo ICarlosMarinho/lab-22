@@ -1,7 +1,6 @@
-import styled, { css } from "styled-components";
+import styled, { css, DefaultTheme } from "styled-components";
 import media from "styled-media-query";
 
-import { DefaultTheme } from "../../common/defaultTheme";
 import { theme } from "../../styles/theme";
 import { TypographyType } from ".";
 
@@ -32,11 +31,11 @@ export const wrapperModifiers = {
     ${media.greaterThan("medium")`
       font-size: ${theme.font.sizes.huge};
     `}
-  `,
+  `
 };
 
 export const Wrapper = styled.h1.attrs<TypographyType>(({ level }) => ({
-  as: `h${level}`,
+  as: `h${level}`
 }))<TypographyType>`
   ${({ size = "large", fontWeight = 700, lineHeight = 1.5 }) =>
     css`

@@ -29,7 +29,7 @@ export const IconWrapper = styled.button<IconWrapperProps>`
 export const Quantity = styled.p`
   ${({ theme }) => css`
     color: ${theme.colors.secondary};
-    font-family: ${theme.font.family.sourceSans};
+    font-family: ${theme.font.family.roboto};
     font-size: ${theme.font.sizes.small};
     line-height: 2.4rem;
     margin: 0 0.8rem;
