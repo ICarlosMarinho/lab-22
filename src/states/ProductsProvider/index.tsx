@@ -1,14 +1,18 @@
-import { createContext, useState } from "react";
-import { ProductsContextValue } from "./ProductsProvider.model";
+import { createContext, useReducer } from "react";
+import { ProductsContextValue, ProductsState } from "./ProductsProvider.model";
+import productsReducer from "./ProductsProvider.reducer";
+
+const defaultState: ProductsState = { cart: [], storage: [] };
 
 export const ProductsContext = createContext<ProductsContextValue>({
-  products: [],
-  setProducts: () => {}
+  state: defaultState,
+  dispatch: () => {}
 });
 
 const ProductsProvider = ({ children }: WithChildren) => {
-  const [products, setProducts] = useState<Product[]>([]);
-  return <ProductsContext.Provider value={{ products, setProducts }}>{children}</ProductsContext.Provider>;
+  const [state, dispatch] = useReducer(productsReducer, defaultState);
+
+  return <ProductsContext.Provider value={{ state, dispatch }}>{children}</ProductsContext.Provider>;
 };
 
 export default ProductsProvider;
