@@ -5,7 +5,7 @@ import Header from "../../components/Header";
 import Product, { ProductProps } from "../../components/Product";
 
 const data: ProductProps = {
-  id: 1,
+  id: "1",
   name: "Product 1",
   picture:
     "https://somos.lojaiplace.com.br/wp-content/uploads/2021/04/apple_iphone-12-spring21_purple_04202021.jpg",

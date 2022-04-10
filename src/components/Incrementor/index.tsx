@@ -4,11 +4,10 @@ import { Subtract as SubtractIcon } from "@styled-icons/remix-fill/Subtract";
 import { Wrapper, IconWrapper, Quantity } from "./Incrementor.styles";
 
 type IncrementorProps = {
-  id: number;
   quantity: number;
 };
 
-const Incrementor = ({ id, quantity }: IncrementorProps) => (
+const Incrementor = ({ quantity }: IncrementorProps) => (
   <Wrapper>
     <IconWrapper>
       <SubtractIcon aria-label="Subtract item" />
