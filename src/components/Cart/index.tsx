@@ -1,9 +1,6 @@
 import { Dispatch, SetStateAction } from "react";
 import { CloseOutline } from "@styled-icons/evaicons-outline";
-
 import Button from "../Button";
-import Typography from "../Typography";
-
 import { Wrapper, Subtotal, Header } from "./Cart.styles";
 
 export type MenuPaymentProps = {
@@ -22,17 +19,13 @@ export type MenuPaymentProps = {
 const MenuPayment = ({ isOpen, setIsOpen }: MenuPaymentProps) => (
   <Wrapper isOpen={isOpen}>
     <Header>
-      <Typography level={5} size="large" fontWeight={600}>
-        Produtos no carrinho
-      </Typography>
+      <h3>Produtos no carrinho</h3>
       <CloseOutline onClick={() => setIsOpen(false)} />
     </Header>
 
     <Subtotal>
-      <Typography level={5} size="large" fontWeight={600}>
-        Total
-      </Typography>
-      <Typography>1,600.50</Typography>
+      <h3>Total</h3>
+      <h3>1,600.50</h3>
     </Subtotal>
 
     <Button fullWidth>Finalizar compra</Button>

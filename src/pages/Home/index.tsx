@@ -2,9 +2,9 @@ import { useState } from "react";
 import Cart from "../../components/Cart";
 import { Container } from "../../components/Container";
 import Header from "../../components/Header";
-import Product, { ProductProps } from "../../components/Product";
+import Product from "../../components/Product";
 
-const data: ProductProps = {
+const data = {
   id: "1",
   name: "Product 1",
   picture:
