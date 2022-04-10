@@ -1,12 +1,7 @@
-import { Dispatch, SetStateAction } from "react";
 import { CloseOutline } from "@styled-icons/evaicons-outline";
 import Button from "../Button";
-import { Wrapper, Subtotal, Header } from "./Cart.styles";
-
-export type MenuPaymentProps = {
-  isOpen: boolean;
-  setIsOpen: Dispatch<SetStateAction<boolean>>;
-};
+import { Container, Subtotal, Header } from "./Cart.styles";
+import { CartProps } from "./Cart.model";
 
 /**
  * Adicionar itens ao carrinho, design ao seu critério mas deve conter:
@@ -16,8 +11,8 @@ export type MenuPaymentProps = {
  * - Incrementador
  */
 
-const MenuPayment = ({ isOpen, setIsOpen }: MenuPaymentProps) => (
-  <Wrapper isOpen={isOpen}>
+const MenuPayment = ({ isOpen, setIsOpen }: CartProps) => (
+  <Container isOpen={isOpen}>
     <Header>
       <h3>Produtos no carrinho</h3>
       <CloseOutline onClick={() => setIsOpen(false)} />
@@ -29,7 +24,7 @@ const MenuPayment = ({ isOpen, setIsOpen }: MenuPaymentProps) => (
     </Subtotal>
 
     <Button>Finalizar compra</Button>
-  </Wrapper>
+  </Container>
 );
 
 export default MenuPayment;
