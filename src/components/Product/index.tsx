@@ -2,7 +2,7 @@ import Incrementor from "../Incrementor";
 import { Wrapper, Info, Column, Text, WrapperIncrementor } from "./Product.styles";
 
 export type ProductProps = {
-  id: number;
+  id: string;
   name: string;
   price: number;
   picture: string;
@@ -19,7 +19,7 @@ const Product = ({ id, name, price, picture }: ProductProps) => (
       </Column>
 
       <WrapperIncrementor>
-        <Incrementor id={id} quantity={1} />
+        <Incrementor quantity={1} />
       </WrapperIncrementor>
     </Info>
   </Wrapper>

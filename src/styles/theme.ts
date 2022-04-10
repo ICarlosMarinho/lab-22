@@ -21,7 +21,6 @@ declare module "styled-components" {
         xsmall: string;
         small: string;
         medium: string;
-        xmedium: string;
         large: string;
         huge: string;
       };
@@ -41,7 +40,7 @@ export const theme = {
   border: {
     radius: {
       other: "0.8rem",
-      default: "0.4rem"
+      default: "5px"
     }
   },
   font: {
@@ -55,12 +54,11 @@ export const theme = {
       bold: 700
     },
     sizes: {
-      xsmall: "1.4rem",
-      small: "1.6rem",
-      medium: "1.8rem",
-      xmedium: "2.0rem",
-      large: "2.4rem",
-      huge: "3.2rem"
+      xsmall: "0.6rem",
+      small: "0.8rem",
+      medium: "1rem",
+      large: "1.2rem",
+      huge: "1.4rem"
     }
   },
   colors: {
