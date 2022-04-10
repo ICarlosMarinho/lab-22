@@ -1,25 +1,26 @@
-import { useState } from "react";
+import { useContext, useEffect, useState } from "react";
 import Cart from "../../components/Cart";
 import { Container } from "../../components/Container";
 import Header from "../../components/Header";
-import Product from "../../components/Product";
-
-const data = {
-  id: "1",
-  name: "Product 1",
-  picture:
-    "https://somos.lojaiplace.com.br/wp-content/uploads/2021/04/apple_iphone-12-spring21_purple_04202021.jpg",
-  price: 20.5
-};
+import Products from "../../components/Products";
+import { getProducts } from "../../services";
+import { ProductsContext } from "../../states/ProductsProvider";
 
 const Home = () => {
   const [isOpen, setIsOpen] = useState(false);
+  const { products, setProducts } = useContext(ProductsContext);
+
+  useEffect(() => {
+    getProducts()
+      .then((result) => setProducts(result))
+      .catch(console.log);
+  }, []);
 
   return (
     <>
       <Header setIsOpen={setIsOpen} />
       <Container>
-        <Product {...data} />
+        <Products products={products} />
         <Cart isOpen={isOpen} setIsOpen={setIsOpen} />
       </Container>
     </>
