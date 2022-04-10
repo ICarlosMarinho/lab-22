@@ -1,14 +1,12 @@
-import { Wrapper } from "./Button.styles";
+import { ButtonHTMLAttributes } from "react";
+import { StyleProps } from "./Button.model";
+import { StyledButton } from "./Button.styles";
 
-export type ButtonProps = {
-  fullWidth?: boolean;
-  onClick?: () => void;
-} & Required<WithChildren>;
-
-const Button = ({ children, fullWidth, onClick }: ButtonProps) => (
-  <Wrapper fullWidth={fullWidth} onClick={onClick}>
-    {children}
-  </Wrapper>
+const Button = ({
+  children,
+  ...rest
+}: WithChildren<StyleProps & ButtonHTMLAttributes<HTMLButtonElement>>) => (
+  <StyledButton {...rest}>{children}</StyledButton>
 );
 
 export default Button;

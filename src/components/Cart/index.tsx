@@ -28,7 +28,7 @@ const MenuPayment = ({ isOpen, setIsOpen }: MenuPaymentProps) => (
       <h3>1,600.50</h3>
     </Subtotal>
 
-    <Button fullWidth>Finalizar compra</Button>
+    <Button>Finalizar compra</Button>
   </Wrapper>
 );
 
