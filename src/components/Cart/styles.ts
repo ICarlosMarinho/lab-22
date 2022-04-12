@@ -3,7 +3,7 @@ import styled, { css } from "styled-components";
 import { MenuPaymentProps } from ".";
 
 export const Wrapper = styled.nav<Pick<MenuPaymentProps, "isOpen">>`
-  padding: 6.4rem 6.2rem 4rem 3rem;
+  padding: 20px;
   height: 100%;
 
   position: fixed;
@@ -21,7 +21,10 @@ export const Wrapper = styled.nav<Pick<MenuPaymentProps, "isOpen">>`
   }
 
   ${({ isOpen, theme }) => css`
-    display: ${isOpen ? "block" : "none"};
+    display: ${isOpen ? "flex" : "none"};
+    flex-direction: ${isOpen ? "column" : "unset"};
+    justify-content: ${isOpen ? "space-between" : "unset"};
+    gap: ${isOpen ? "20px" : "unset"};
     background-color: ${theme.colors.white};
   `}
 `;
@@ -37,7 +40,6 @@ export const Header = styled.div`
   align-items: center;
   justify-content: space-between;
   margin-bottom: 2.6rem;
-
   > svg {
     cursor: pointer;
     color: ${({ theme }) => theme.colors.primary};
